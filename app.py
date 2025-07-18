@@ -4,4 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "🚀 Hello from Flask on Render!"
+    return "🚀 Hello from Flask on Render! dd"
+
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: butiran-backend
-    env: python
-    plan: free
-    buildCommand: ""
-    startCommand: gunicorn app:app
-    runtime: python

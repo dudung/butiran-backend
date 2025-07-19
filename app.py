@@ -4,7 +4,11 @@ from flask import Flask
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # This enables CORS for all routes
+CORS(app, origins=[
+    "http://localhost:1313",
+    "https://dudung.github.io",
+    "https://dudung.github.io/butiran",
+])
 
 @app.route("/")
 def home():
